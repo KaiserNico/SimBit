@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MicroPython-micro:bit simulator example embedding</title>
+    <style>
+      html,
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      iframe {
+        width: 500px;
+        height: 100%;
+      }
+      button,
+      textarea,
+      select {
+        display: block;
+        margin: 0.25em 0;
+        padding: 0.5em;
+        border: 2px solid black;
+        background-color: white;
+      }
+      textarea {
+        white-space: pre;
+        width: calc(100% - 15px);
+      }
+      .content {
+        margin: 2em auto;
+        max-width: fit-content;
+      }
+      .row {
+        display: flex;
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+      }
+      .terminal {
+        margin-bottom: 0.5em;
+      }
+      .simulator {
+        display: flex;
+      }
+      iframe {
+        padding: 0.5em 2em;
+      }
+      #sensors {
+        margin: 0.5em 2em;
+        flex: 1 1 auto;
+      }
+      #sensors > * {
+        padding: 0.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .actions {
+        display: flex;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>MicroPython-micro:bit simulator example embedding</h1>
+      <div class="row">
+        <div class="simulator column">
+          <iframe
+            id="simulator"
+            src="simulator.html?color=%230075ff"
+            title="Simulator"
+            frameborder="0"
+            scrolling="no"
+            sandbox="allow-scripts allow-same-origin"
+          ></iframe>
+        </div>
+        <div class="column">
+          <div id="term"></div>
+          <div class="samples">
+            <select id="sample">
+              <!-- option values correspond to filenames in the examples folder in alphabetical order -->
+              <option value="accelerometer">Accelerometer</option>
+              <option value="audio">Audio</option>
+              <option value="background">Background music and display</option>
+              <option value="buttons">Buttons</option>
+              <option value="compass">Compass</option>
+              <option value="data_logging">Data logging</option>
+              <option value="display">Display</option>
+              <option value="inline_assembler">Inline assembler</option>
+              <option value="microphone">Microphone</option>
+              <option value="music">Music</option>
+              <!-- Nico Kaiser Start -->
+              <option value="neopixel">Neopixel</option>
+              <!-- End -->
+              <option value="pin_logo">Pin logo</option>
+              <option value="radio">Radio</option>
+              <option value="random">Random</option>
+              <option value="sensors">Sensors</option>
+              <option value="sound_effects_builtin">
+                Sound effects (builtin)
+              </option>
+              <option value="sound_effects_user">Sound effects (user)</option>
+              <option value="speech">Speech</option>
+              <option value="stack_size">Stack size</option>
+              <option value="volume">Volume</option>
+            </select>
+            <textarea
+              id="program"
+              rows="10"
+              spellcheck="false"
+              autocapitalize="false"
+              autocomplete="false"
+            >
+            </textarea>
+            <div class="actions">
+              <button id="stop">Stop</button>
+              <button id="reset">Reset</button>
+              <button id="mute">Mute</button>
+              <button id="unmute">Unmute</button>
+            </div>
+          </div>
+          
+          <!-- Nico Kaiser Start -->
+          <div id="sensors" class="column"></div>
+          <!-- Nico Kaiser Ende -->
+          
+        </div>
+      </div>
+    </div>
+    <script src="term.js"></script>
+    <script>
+      // Connect the simulator REPL to a terminal.
+      const simulator = document.querySelector("#simulator").contentWindow;
+      const term = new Terminal({
+        cols: 80,
+        rows: 24,
+        useStyle: true,
+        screenKeys: true,
+        cursorBlink: false,
+      });
+      term.open(document.getElementById("term"));
+      term.removeAllListeners("data");
+      term.on("data", function (data) {
+        simulator.postMessage(
+          {
+            kind: "serial_input",
+            data,
+          },
+          "*"
+        );
+      });
+
+      // The simulator state used to draw the sensors area.
+      let state = {};
+      window.addEventListener("message", (e) => {
+        const { data } = e;
+        if (e.source === simulator) {
+          switch (data.kind) {
+            case "serial_output": {
+              term.write(e.data.data);
+              break;
+            }
+            case "radio_output": {
+              const text = new TextDecoder()
+                .decode(e.data.data)
+                .replace(/^\x01\x00\x01/, "");
+              console.log(text);
+              break;
+            }
+            case "log_output": {
+              if (e.data.headings) {
+                console.log(e.data.headings);
+              }
+              if (e.data.data) {
+                console.log(e.data.data);
+              }
+              break;
+            }
+            case "log_delete": {
+              console.log("[log_delete]");
+              break;
+            }
+            case "ready": {
+              // We create this here to allow embedders to use
+              // relevant styling/widgets.
+              state = data.state;
+              createSensorUI(state);
+              break;
+            }
+            case "state_change": {
+              state = {
+                ...state,
+                ...data.change,
+              };
+              createSensorUI(state);
+              break;
+            }
+            case "request_flash": {
+              simulator.postMessage(
+                {
+                  kind: "flash",
+                  filesystem: {
+                    "main.py": new TextEncoder().encode(program.value),
+                  },
+                },
+                "*"
+              );
+              break;
+            }
+            case "internal_error": {
+              console.error("Simulator internal error:");
+              console.error(e.data.error);
+              break;
+            }
+            default: {
+              // Ignore unknown message
+            }
+          }
+        }
+      });
+
+      // Support for running samples via the REPL.
+      // There is no filesystem support for the moment.
+      const sample = document.querySelector("#sample");
+      const program = document.querySelector("#program");
+      async function fetchProgram(name) {
+        const response = await fetch(`examples/${name}.py`);
+        if (response.ok) {
+          const text = await response.text();
+          program.value = text;
+        } else {
+          program.value = `# No matching example found for ${name}`;
+        }
+      }
+      sample.addEventListener("change", async () => {
+        fetchProgram(sample.value);
+      });
+      fetchProgram(sample.value);
+
+      document.querySelector("#stop").addEventListener("click", async () => {
+        simulator.postMessage(
+          {
+            kind: "stop",
+          },
+          "*"
+        );
+      });
+
+      document.querySelector("#reset").addEventListener("click", async () => {
+        simulator.postMessage(
+          {
+            kind: "reset",
+          },
+          "*"
+        );
+      });
+
+      document.querySelector("#mute").addEventListener("click", async () => {
+        simulator.postMessage(
+          {
+            kind: "mute",
+          },
+          "*"
+        );
+      });
+
+      document.querySelector("#unmute").addEventListener("click", async () => {
+        simulator.postMessage(
+          {
+            kind: "unmute",
+          },
+          "*"
+        );
+      });
+
+      function createSensorUI(state) {
+        const createRangeUI = function (sensor) {
+          const { min, max, value, type, id } = sensor;
+          const labelElt = document.createElement("label");
+          const text = labelElt.appendChild(document.createElement("span"));
+          text.innerText = id;
+          const input = labelElt.appendChild(document.createElement("input"));
+          Object.assign(input, { min, max, type });
+          input.value = value;
+          input.addEventListener("change", () => {
+            simulator.postMessage(
+              {
+                kind: "set_value",
+                id,
+                value: input.value,
+              },
+              "*"
+            );
+          });
+          return labelElt;
+        };
+        const createEnumUI = function (sensor) {
+          const { id, choices, value } = sensor;
+          const labelElt = document.createElement("label");
+          const text = labelElt.appendChild(document.createElement("span"));
+          text.innerText = id;
+          const select = labelElt.appendChild(document.createElement("select"));
+          for (const choice of sensor.choices) {
+            const option = select.appendChild(document.createElement("option"));
+            option.textContent = choice;
+            option.value = choice;
+            if (value === choice) {
+              option.setAttribute("selected", "true");
+            }
+          }
+          select.addEventListener("change", () => {
+            simulator.postMessage(
+              {
+                kind: "set_value",
+                id,
+                value: select.value,
+              },
+              "*"
+            );
+          });
+          return labelElt;
+        };
+        const createInfoUI = function (info) {
+          const labelElt = document.createElement("label");
+          const text = labelElt.appendChild(document.createElement("span"));
+          text.innerText = info.type;
+          const infoText = labelElt.appendChild(document.createElement("code"));
+          const infoMutable = { ...info };
+          delete infoMutable.type;
+          infoText.innerText = JSON.stringify(infoMutable);
+          return labelElt;
+        };
+
+        // Create UI for sensors.
+        const parent = document.querySelector("#sensors");
+        parent.innerHTML = "";
+        for (const component of Object.values(state)) {
+          switch (component.type) {
+            case "range":
+              parent.appendChild(createRangeUI(component));
+              break;
+            case "enum":
+              parent.appendChild(createEnumUI(component));
+              break;
+            default:
+              parent.appendChild(createInfoUI(component));
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

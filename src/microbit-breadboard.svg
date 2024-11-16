@@ -1,0 +1,2921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.0" viewBox="0 0 495 322.5" class="sim-bb" width="495px" height="322.5px" x="2.5px" y="380.3225806451615" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<style>
+		.sim-bb-background {
+      fill: #E0E0E0;
+    }
+
+    .sim-bb-pin {
+    	fill: #999;
+    }
+
+    .sim-bb-pin-hover {
+      visibility: hidden;
+      pointer-events: all;
+      stroke-width: 7.5px;
+      stroke: transparent;
+      fill: #777;
+    }
+
+   .sim-bb-pin-hover:hover {
+      visibility: visible;
+      fill: #444;
+    }
+
+   .sim-bb-group-wire {
+      stroke: #999;
+      stroke-width: 3.75px;
+      visibility: hidden;
+    }
+
+   .sim-bb-pin-group {
+      pointer-events: all;
+    }
+
+    .sim-bb-label,
+    .sim-bb-label-hover {
+      font-family: "Lucida Console", Monaco, monospace;
+      fill: #555;
+      pointer-events: all;
+      stroke-width: 0;
+      cursor: default;
+    }
+
+    .sim-bb-label-hover {
+      visibility: hidden;
+      fill: #000;
+      font-weight: bold;
+    }
+
+    .sim-bb-bar {
+      stroke-width: 0;
+    }
+
+    .sim-bb-blue {
+      fill: #1AA5D7;
+      stroke: #1AA5D7
+    }
+
+    .sim-bb-red {
+      fill: #DD4BA0;
+      stroke: #DD4BA0;
+    }
+
+    .sim-bb-pin-group:hover .sim-bb-pin-hover,
+    .sim-bb-pin-group:hover .sim-bb-group-wire,
+    .sim-bb-pin-group:hover .sim-bb-label-hover {
+      visibility: visible;
+    }
+
+    .sim-bb-pin-group:hover .sim-bb-label {
+      visibility: hidden;
+    }
+    /* outline mode */
+    .sim-bb-outline .sim-bb-background {
+      stroke-width: 2.142857142857143px;
+      fill: #FFF;
+      stroke: #000;
+    }
+
+    .sim-bb-outline .sim-bb-mid-channel {
+      fill: #FFF;
+      stroke: #888;
+      stroke-width: 2px;
+    }
+    /* grayed out */
+    .grayed .sim-bb-background {
+      stroke-width: 3px;
+    }
+
+    .grayed .sim-bb-red,
+    .grayed .sim-bb-blue {
+      fill: #BBB;
+    }
+
+    .grayed .sim-bb-bar {
+      fill: #FFF;
+    }
+
+    .grayed .sim-bb-pin {
+      fill: #000;
+      stroke: #FFF;
+      stroke-width: 3px;
+    }
+
+    .grayed .sim-bb-label {
+      fill: none;
+    }
+
+    .grayed .sim-bb-background {
+      stroke-width: 7.5px;
+      stroke: #555;
+    }
+
+    .grayed .sim-bb-group-wire {
+      stroke: #DDD;
+    }
+
+    .grayed .sim-bb-channel {
+      visibility: hidden;
+    }
+    /* highlighted */
+    .sim-bb-label.highlight {
+      visibility: hidden;
+    }
+
+    .sim-bb-label-hover.highlight {
+      visibility: visible;
+    }
+
+    .sim-bb-blue.highlight {
+      fill: #1AA5D7;
+    }
+
+    .sim-bb-red.highlight {
+      fill: #DD4BA0;
+    }
+
+    .sim-bb-bar.highlight {
+      stroke-width: 0px;
+    }
+  </style>
+	<defs> 
+		<linearGradient id="sim-bb-channel-grad" x1="0%" y1="0%" x2="0%" y2="100%"> 
+			<stop offset="0%" style="stop-color: #AAA;"></stop> 
+			<stop offset="20%" style="stop-color: #CCC;"></stop> 
+			<stop offset="80%" style="stop-color: #CCC;"></stop>
+			<stop offset="100%" style="stop-color: #AAA;"></stop>
+		</linearGradient>
+	</defs>
+	<rect class="sim-bb-background" width="495" height="322.5" rx="4.5" ry="4.5"></rect>
+	<rect class="sim-bb-channel sim-bb-mid-channel" y="153.75" width="495" height="15" fill="url(#sim-bb-channel-grad)"></rect>
+	<rect class="sim-bb-channel sim-bb-sml-channel" y="53.37500000000001" width="495" height="0.75" fill="url(#sim-bb-channel-grad)"></rect>
+	<rect class="sim-bb-channel sim-bb-sml-channel" y="268.375" width="495" height="0.75" fill="url(#sim-bb-channel-grad)"></rect>
+	<rect class="sim-bb-bar sim-bb-blue" x="26.25" y="277.625" width="442.5" height="3"></rect>
+	<rect class="sim-bb-bar sim-bb-red" x="26.25" y="310.625" width="442.5" height="3"></rect>
+	<rect class="sim-bb-bar sim-bb-blue" x="26.25" y="8.875000000000004" width="442.5" height="3"></rect>
+	<rect class="sim-bb-bar sim-bb-red" x="26.25" y="41.875" width="442.5" height="3"></rect>
+	<g class="sim-bb-pin-group group-b1">
+		<rect x="30" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="27" y="75.75">
+			<title>(j,1)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="26.1" y="74.85">
+			<title>(j,1)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="27" y="90.75">
+			<title>(i,1)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="26.1" y="89.85">
+			<title>(i,1)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="27" y="105.75">
+			<title>(h,1)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="26.1" y="104.85">
+			<title>(h,1)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="27" y="120.75">
+			<title>(g,1)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="26.1" y="119.85">
+			<title>(g,1)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="27" y="135.75">
+			<title>(f,1)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="26.1" y="134.85">
+			<title>(f,1)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(30 63.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">1</text>
+		<text style="font-size:13.65px;" transform="translate(30 63.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">1</text>
+		</g>
+	<g class="sim-bb-pin-group group-b2">
+		<rect x="45" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="42" y="75.75">
+			<title>(j,2)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="41.1" y="74.85">
+			<title>(j,2)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="42" y="90.75">
+			<title>(i,2)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="41.1" y="89.85">
+			<title>(i,2)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="42" y="105.75">
+			<title>(h,2)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="41.1" y="104.85">
+			<title>(h,2)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="42" y="120.75">
+			<title>(g,2)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="41.1" y="119.85">
+			<title>(g,2)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="42" y="135.75">
+			<title>(f,2)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="41.1" y="134.85">
+			<title>(f,2)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(45 63.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">2</text>
+		<text style="font-size:13.65px;" transform="translate(45 63.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">2</text>
+	</g>
+	<g class="sim-bb-pin-group group-b3">
+		<rect x="60" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="57" y="75.75">
+			<title>(j,3)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="56.1" y="74.85">
+			<title>(j,3)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="57" y="90.75">
+			<title>(i,3)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="56.1" y="89.85">
+			<title>(i,3)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="57" y="105.75">
+			<title>(h,3)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="56.1" y="104.85">
+			<title>(h,3)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="57" y="120.75">
+			<title>(g,3)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="56.1" y="119.85">
+			<title>(g,3)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="57" y="135.75">
+			<title>(f,3)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="56.1" y="134.85">
+			<title>(f,3)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(60 63.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">3</text>
+		<text style="font-size:13.65px;" transform="translate(60 63.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">3</text>
+	</g>
+	<g class="sim-bb-pin-group group-b4">
+		<rect x="75" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="72" y="75.75">
+			<title>(j,4)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="71.1" y="74.85">
+			<title>(j,4)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="72" y="90.75">
+			<title>(i,4)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="71.1" y="89.85">
+			<title>(i,4)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="72" y="105.75">
+			<title>(h,4)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="71.1" y="104.85">
+			<title>(h,4)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="72" y="120.75">
+			<title>(g,4)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="71.1" y="119.85">
+			<title>(g,4)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="72" y="135.75">
+			<title>(f,4)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="71.1" y="134.85">
+			<title>(f,4)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(75 63.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">4</text>
+		<text style="font-size:13.65px;" transform="translate(75 63.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">4</text>
+	</g>
+	<g class="sim-bb-pin-group group-b5">
+		<rect x="90" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="87" y="75.75">
+			<title>(j,5)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="86.1" y="74.85">
+			<title>(j,5)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="87" y="90.75">
+			<title>(i,5)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="86.1" y="89.85">
+			<title>(i,5)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="87" y="105.75">
+			<title>(h,5)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="86.1" y="104.85">
+			<title>(h,5)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="87" y="120.75">
+			<title>(g,5)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="86.1" y="119.85">
+			<title>(g,5)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="87" y="135.75">
+			<title>(f,5)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="86.1" y="134.85">
+			<title>(f,5)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(90 63.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">5</text>
+		<text style="font-size:13.65px;" transform="translate(90 63.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">5</text>
+	</g>
+	<g class="sim-bb-pin-group group-b6">
+		<rect x="105" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="102" y="75.75">
+			<title>(j,6)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="101.1" y="74.85">
+			<title>(j,6)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="102" y="90.75">
+			<title>(i,6)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="101.1" y="89.85">
+			<title>(i,6)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="102" y="105.75">
+			<title>(h,6)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="101.1" y="104.85">
+			<title>(h,6)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="102" y="120.75">
+			<title>(g,6)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="101.1" y="119.85">
+			<title>(g,6)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="102" y="135.75">
+			<title>(f,6)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="101.1" y="134.85">
+			<title>(f,6)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(105 63.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">6</text>
+		<text style="font-size:13.65px;" transform="translate(105 63.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">6</text>
+	</g>
+	<g class="sim-bb-pin-group group-b7">
+		<rect x="120" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="117" y="75.75">
+			<title>(j,7)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="116.1" y="74.85">
+			<title>(j,7)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="117" y="90.75">
+			<title>(i,7)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="116.1" y="89.85">
+			<title>(i,7)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="117" y="105.75">
+			<title>(h,7)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="116.1" y="104.85">
+			<title>(h,7)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="117" y="120.75">
+			<title>(g,7)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="116.1" y="119.85">
+			<title>(g,7)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="117" y="135.75">
+			<title>(f,7)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="116.1" y="134.85">
+			<title>(f,7)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(120 63.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">7</text>
+		<text style="font-size:13.65px;" transform="translate(120 63.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">7</text>
+	</g>
+	<g class="sim-bb-pin-group group-b8">
+		<rect x="135" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="132" y="75.75">
+			<title>(j,8)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="131.1" y="74.85">
+			<title>(j,8)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="132" y="90.75">
+			<title>(i,8)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="131.1" y="89.85">
+			<title>(i,8)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="132" y="105.75">
+			<title>(h,8)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="131.1" y="104.85">
+			<title>(h,8)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="132" y="120.75">
+			<title>(g,8)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="131.1" y="119.85">
+			<title>(g,8)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="132" y="135.75">
+			<title>(f,8)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="131.1" y="134.85">
+			<title>(f,8)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(135 63.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">8</text>
+		<text style="font-size:13.65px;" transform="translate(135 63.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">8</text>
+	</g>
+	<g class="sim-bb-pin-group group-b9">
+		<rect x="150" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="147" y="75.75">
+			<title>(j,9)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="146.1" y="74.85">
+			<title>(j,9)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="147" y="90.75">
+			<title>(i,9)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="146.1" y="89.85">
+			<title>(i,9)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="147" y="105.75">
+			<title>(h,9)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="146.1" y="104.85">
+			<title>(h,9)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="147" y="120.75">
+			<title>(g,9)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="146.1" y="119.85">
+			<title>(g,9)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="147" y="135.75">
+			<title>(f,9)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="146.1" y="134.85">
+			<title>(f,9)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(150 63.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">9</text>
+		<text style="font-size:13.65px;" transform="translate(150 63.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">9</text>
+	</g>
+	<g class="sim-bb-pin-group group-b10">
+		<rect x="165" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="162" y="75.75">
+			<title>(j,10)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="161.1" y="74.85">
+			<title>(j,10)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="162" y="90.75">
+			<title>(i,10)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="161.1" y="89.85">
+			<title>(i,10)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="162" y="105.75">
+			<title>(h,10)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="161.1" y="104.85">
+			<title>(h,10)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="162" y="120.75">
+			<title>(g,10)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="161.1" y="119.85">
+			<title>(g,10)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="162" y="135.75">
+			<title>(f,10)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="161.1" y="134.85">
+			<title>(f,10)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(165 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">10</text>
+		<text style="font-size:13.65px;" transform="translate(165 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">10</text>
+	</g>
+	<g class="sim-bb-pin-group group-b11">
+		<rect x="180" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="177" y="75.75">
+			<title>(j,11)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="176.1" y="74.85">
+			<title>(j,11)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="177" y="90.75">
+			<title>(i,11)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="176.1" y="89.85">
+			<title>(i,11)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="177" y="105.75">
+			<title>(h,11)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="176.1" y="104.85">
+			<title>(h,11)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="177" y="120.75">
+			<title>(g,11)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="176.1" y="119.85">
+			<title>(g,11)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="177" y="135.75">
+			<title>(f,11)</title>
+		</rect><rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="176.1" y="134.85">
+			<title>(f,11)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(180 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">11</text>
+		<text style="font-size:13.65px;" transform="translate(180 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">11</text>
+	</g>
+	<g class="sim-bb-pin-group group-b12">
+		<rect x="195" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="192" y="75.75">
+			<title>(j,12)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="191.1" y="74.85">
+			<title>(j,12)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="192" y="90.75">
+			<title>(i,12)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="191.1" y="89.85">
+			<title>(i,12)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="192" y="105.75">
+			<title>(h,12)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="191.1" y="104.85">
+			<title>(h,12)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="192" y="120.75">
+			<title>(g,12)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="191.1" y="119.85">
+			<title>(g,12)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="192" y="135.75">
+			<title>(f,12)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="191.1" y="134.85">
+			<title>(f,12)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(195 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">12</text>
+		<text style="font-size:13.65px;" transform="translate(195 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">12</text>
+	</g>
+	<g class="sim-bb-pin-group group-b13">
+		<rect x="210" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="207" y="75.75">
+			<title>(j,13)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="206.1" y="74.85">
+			<title>(j,13)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="207" y="90.75">
+			<title>(i,13)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="206.1" y="89.85">
+			<title>(i,13)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="207" y="105.75">
+			<title>(h,13)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="206.1" y="104.85">
+			<title>(h,13)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="207" y="120.75">
+			<title>(g,13)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="206.1" y="119.85">
+			<title>(g,13)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="207" y="135.75">
+			<title>(f,13)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="206.1" y="134.85">
+			<title>(f,13)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(210 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">13</text>
+		<text style="font-size:13.65px;" transform="translate(210 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">13</text>
+	</g>
+	<g class="sim-bb-pin-group group-b14">
+		<rect x="225" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="222" y="75.75">
+			<title>(j,14)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="221.1" y="74.85">
+			<title>(j,14)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="222" y="90.75">
+			<title>(i,14)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="221.1" y="89.85">
+			<title>(i,14)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="222" y="105.75">
+			<title>(h,14)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="221.1" y="104.85">
+			<title>(h,14)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="222" y="120.75">
+			<title>(g,14)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="221.1" y="119.85">
+			<title>(g,14)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="222" y="135.75">
+			<title>(f,14)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="221.1" y="134.85">
+			<title>(f,14)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(225 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">14</text>
+		<text style="font-size:13.65px;" transform="translate(225 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">14</text>
+	</g>
+	<g class="sim-bb-pin-group group-b15">
+		<rect x="240" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="237" y="75.75">
+			<title>(j,15)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="236.1" y="74.85">
+			<title>(j,15)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="237" y="90.75">
+			<title>(i,15)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="236.1" y="89.85">
+			<title>(i,15)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="237" y="105.75">
+			<title>(h,15)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="236.1" y="104.85">
+			<title>(h,15)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="237" y="120.75">
+			<title>(g,15)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="236.1" y="119.85">
+			<title>(g,15)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="237" y="135.75">
+			<title>(f,15)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="236.1" y="134.85">
+			<title>(f,15)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(240 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">15</text>
+		<text style="font-size:13.65px;" transform="translate(240 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">15</text>
+	</g>
+	<g class="sim-bb-pin-group group-b16">
+		<rect x="255" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="252" y="75.75">
+			<title>(j,16)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="251.1" y="74.85">
+			<title>(j,16)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="252" y="90.75">
+			<title>(i,16)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="251.1" y="89.85">
+			<title>(i,16)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="252" y="105.75">
+			<title>(h,16)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="251.1" y="104.85">
+			<title>(h,16)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="252" y="120.75">
+			<title>(g,16)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="251.1" y="119.85">
+			<title>(g,16)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="252" y="135.75">
+			<title>(f,16)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="251.1" y="134.85">
+			<title>(f,16)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(255 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">16</text>
+		<text style="font-size:13.65px;" transform="translate(255 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">16</text>
+	</g>
+	<g class="sim-bb-pin-group group-b17">
+		<rect x="270" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="267" y="75.75">
+			<title>(j,17)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="266.1" y="74.85">
+			<title>(j,17)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="267" y="90.75">
+			<title>(i,17)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="266.1" y="89.85">
+			<title>(i,17)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="267" y="105.75">
+			<title>(h,17)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="266.1" y="104.85">
+			<title>(h,17)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="267" y="120.75">
+			<title>(g,17)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="266.1" y="119.85">
+			<title>(g,17)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="267" y="135.75">
+			<title>(f,17)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="266.1" y="134.85">
+			<title>(f,17)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(270 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">17</text>
+		<text style="font-size:13.65px;" transform="translate(270 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">17</text>
+	</g>
+	<g class="sim-bb-pin-group group-b18">
+		<rect x="285" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="282" y="75.75">
+			<title>(j,18)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="281.1" y="74.85">
+			<title>(j,18)</title></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="282" y="90.75">
+			<title>(i,18)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="281.1" y="89.85">
+			<title>(i,18)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="282" y="105.75">
+			<title>(h,18)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="281.1" y="104.85">
+			<title>(h,18)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="282" y="120.75">
+			<title>(g,18)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="281.1" y="119.85">
+			<title>(g,18)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="282" y="135.75">
+			<title>(f,18)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="281.1" y="134.85">
+			<title>(f,18)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(285 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">18</text>
+		<text style="font-size:13.65px;" transform="translate(285 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">18</text>
+	</g>
+	<g class="sim-bb-pin-group group-b19">
+		<rect x="300" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="297" y="75.75">
+			<title>(j,19)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="296.1" y="74.85">
+			<title>(j,19)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="297" y="90.75">
+			<title>(i,19)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="296.1" y="89.85">
+			<title>(i,19)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="297" y="105.75">
+			<title>(h,19)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="296.1" y="104.85">
+			<title>(h,19)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="297" y="120.75">
+			<title>(g,19)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="296.1" y="119.85">
+			<title>(g,19)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="297" y="135.75">
+			<title>(f,19)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="296.1" y="134.85">
+			<title>(f,19)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(300 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">19</text>
+		<text style="font-size:13.65px;" transform="translate(300 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">19</text>
+	</g>
+	<g class="sim-bb-pin-group group-b20">
+		<rect x="315" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire">
+		</rect><rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="312" y="75.75">
+			<title>(j,20)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="311.1" y="74.85">
+			<title>(j,20)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="312" y="90.75">
+			<title>(i,20)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="311.1" y="89.85">
+			<title>(i,20)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="312" y="105.75">
+			<title>(h,20)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="311.1" y="104.85">
+			<title>(h,20)</title>
+		</rect><rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="312" y="120.75">
+			<title>(g,20)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="311.1" y="119.85">
+			<title>(g,20)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="312" y="135.75">
+			<title>(f,20)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="311.1" y="134.85">
+			<title>(f,20)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(315 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">20</text>
+		<text style="font-size:13.65px;" transform="translate(315 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">20</text>
+	</g>
+	<g class="sim-bb-pin-group group-b21">
+		<rect x="330" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="327" y="75.75">
+			<title>(j,21)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="326.1" y="74.85">
+			<title>(j,21)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="327" y="90.75">
+			<title>(i,21)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="326.1" y="89.85">
+			<title>(i,21)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="327" y="105.75">
+			<title>(h,21)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="326.1" y="104.85">
+			<title>(h,21)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="327" y="120.75">
+			<title>(g,21)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="326.1" y="119.85">
+			<title>(g,21)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="327" y="135.75">
+			<title>(f,21)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="326.1" y="134.85">
+			<title>(f,21)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(330 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">21</text>
+		<text style="font-size:13.65px;" transform="translate(330 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">21</text>
+	</g>
+	<g class="sim-bb-pin-group group-b22">
+		<rect x="345" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="342" y="75.75">
+			<title>(j,22)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="341.1" y="74.85">
+			<title>(j,22)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="342" y="90.75">
+			<title>(i,22)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="341.1" y="89.85">
+			<title>(i,22)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="342" y="105.75">
+			<title>(h,22)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="341.1" y="104.85">
+			<title>(h,22)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="342" y="120.75">
+			<title>(g,22)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="341.1" y="119.85">
+			<title>(g,22)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="342" y="135.75">
+			<title>(f,22)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="341.1" y="134.85">
+			<title>(f,22)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(345 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">22</text>
+		<text style="font-size:13.65px;" transform="translate(345 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">22</text>
+	</g>
+	<g class="sim-bb-pin-group group-b23">
+		<rect x="360" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="357" y="75.75">
+			<title>(j,23)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="356.1" y="74.85">
+			<title>(j,23)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="357" y="90.75">
+			<title>(i,23)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="356.1" y="89.85">
+			<title>(i,23)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="357" y="105.75">
+			<title>(h,23)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="356.1" y="104.85">
+			<title>(h,23)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="357" y="120.75">
+			<title>(g,23)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="356.1" y="119.85">
+			<title>(g,23)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="357" y="135.75">
+			<title>(f,23)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="356.1" y="134.85">
+			<title>(f,23)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(360 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">23</text>
+		<text style="font-size:13.65px;" transform="translate(360 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">23</text>
+	</g>
+	<g class="sim-bb-pin-group group-b24">
+		<rect x="375" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="372" y="75.75">
+			<title>(j,24)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="371.1" y="74.85">
+			<title>(j,24)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="372" y="90.75">
+			<title>(i,24)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="371.1" y="89.85">
+			<title>(i,24)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="372" y="105.75">
+			<title>(h,24)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="371.1" y="104.85">
+			<title>(h,24)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="372" y="120.75">
+			<title>(g,24)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="371.1" y="119.85">
+			<title>(g,24)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="372" y="135.75">
+			<title>(f,24)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="371.1" y="134.85">
+			<title>(f,24)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(375 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">24</text>
+		<text style="font-size:13.65px;" transform="translate(375 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">24</text>
+	</g>
+	<g class="sim-bb-pin-group group-b25">
+		<rect x="390" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="387" y="75.75">
+			<title>(j,25)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="386.1" y="74.85">
+			<title>(j,25)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="387" y="90.75">
+			<title>(i,25)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="386.1" y="89.85">
+			<title>(i,25)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="387" y="105.75">
+			<title>(h,25)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="386.1" y="104.85">
+			<title>(h,25)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="387" y="120.75">
+			<title>(g,25)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="386.1" y="119.85">
+			<title>(g,25)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="387" y="135.75">
+			<title>(f,25)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="386.1" y="134.85">
+			<title>(f,25)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(390 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">25</text>
+		<text style="font-size:13.65px;" transform="translate(390 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">25</text>
+	</g>
+	<g class="sim-bb-pin-group group-b26">
+		<rect x="405" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="402" y="75.75">
+			<title>(j,26)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="401.1" y="74.85">
+			<title>(j,26)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="402" y="90.75">
+			<title>(i,26)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="401.1" y="89.85">
+			<title>(i,26)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="402" y="105.75">
+			<title>(h,26)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="401.1" y="104.85">
+			<title>(h,26)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="402" y="120.75">
+			<title>(g,26)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="401.1" y="119.85">
+			<title>(g,26)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="402" y="135.75">
+			<title>(f,26)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="401.1" y="134.85">
+			<title>(f,26)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(405 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">26</text>
+		<text style="font-size:13.65px;" transform="translate(405 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">26</text>
+	</g>
+	<g class="sim-bb-pin-group group-b27">
+		<rect x="420" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="417" y="75.75">
+			<title>(j,27)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="416.1" y="74.85">
+			<title>(j,27)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="417" y="90.75">
+			<title>(i,27)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="416.1" y="89.85">
+			<title>(i,27)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="417" y="105.75">
+			<title>(h,27)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="416.1" y="104.85">
+			<title>(h,27)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="417" y="120.75">
+			<title>(g,27)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="416.1" y="119.85">
+			<title>(g,27)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="417" y="135.75">
+			<title>(f,27)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="416.1" y="134.85">
+			<title>(f,27)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(420 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">27</text>
+		<text style="font-size:13.65px;" transform="translate(420 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">27</text>
+	</g>
+	<g class="sim-bb-pin-group group-b28">
+		<rect x="435" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="432" y="75.75">
+			<title>(j,28)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="431.1" y="74.85">
+			<title>(j,28)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="432" y="90.75">
+			<title>(i,28)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="431.1" y="89.85">
+			<title>(i,28)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="432" y="105.75">
+			<title>(h,28)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="431.1" y="104.85">
+			<title>(h,28)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="432" y="120.75">
+			<title>(g,28)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="431.1" y="119.85">
+			<title>(g,28)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="432" y="135.75">
+			<title>(f,28)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="431.1" y="134.85">
+			<title>(f,28)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(435 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">28</text>
+		<text style="font-size:13.65px;" transform="translate(435 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">28</text>
+	</g>
+	<g class="sim-bb-pin-group group-b29">
+		<rect x="450" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="447" y="75.75">
+			<title>(j,29)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="446.1" y="74.85">
+			<title>(j,29)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="447" y="90.75">
+			<title>(i,29)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="446.1" y="89.85">
+			<title>(i,29)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="447" y="105.75">
+			<title>(h,29)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="446.1" y="104.85">
+			<title>(h,29)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="447" y="120.75">
+			<title>(g,29)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="446.1" y="119.85">
+			<title>(g,29)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="447" y="135.75">
+			<title>(f,29)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="446.1" y="134.85">
+			<title>(f,29)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(450 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">29</text>
+		<text style="font-size:13.65px;" transform="translate(450 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">29</text>
+	</g>
+	<g class="sim-bb-pin-group group-b30">
+		<rect x="465" y="78.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="462" y="75.75">
+			<title>(j,30)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="461.1" y="74.85">
+			<title>(j,30)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="462" y="90.75">
+			<title>(i,30)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="461.1" y="89.85">
+			<title>(i,30)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="462" y="105.75">
+			<title>(h,30)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="461.1" y="104.85">
+			<title>(h,30)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="462" y="120.75">
+			<title>(g,30)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="461.1" y="119.85">
+			<title>(g,30)</title>
+		</rect><rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="462" y="135.75">
+			<title>(f,30)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="461.1" y="134.85">
+			<title>(f,30)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(465 63.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">30</text>
+		<text style="font-size:13.65px;" transform="translate(465 63.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">30</text>
+	</g>
+	<g class="sim-bb-pin-group group-t1">
+		<rect x="30" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="27" y="180.75">
+			<title>(e,1)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="26.1" y="179.85">
+			<title>(e,1)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="27" y="195.75">
+			<title>(d,1)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="26.1" y="194.85">
+			<title>(d,1)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="27" y="210.75">
+			<title>(c,1)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="26.1" y="209.85">
+			<title>(c,1)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="27" y="225.75">
+			<title>(b,1)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="26.1" y="224.85">
+			<title>(b,1)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="27" y="240.75">
+			<title>(a,1)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="26.1" y="239.85">
+			<title>(a,1)</title></rect>
+		<text style="font-size:10.5px;" transform="translate(30 258.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">1</text>
+		<text style="font-size:13.65px;" transform="translate(30 258.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">1</text>
+	</g>
+	<g class="sim-bb-pin-group group-t2">
+		<rect x="45" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="42" y="180.75">
+			<title>(e,2)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="41.1" y="179.85">
+			<title>(e,2)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="42" y="195.75">
+			<title>(d,2)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="41.1" y="194.85">
+			<title>(d,2)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="42" y="210.75">
+			<title>(c,2)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="41.1" y="209.85">
+			<title>(c,2)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="42" y="225.75">
+			<title>(b,2)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="41.1" y="224.85">
+			<title>(b,2)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="42" y="240.75">
+			<title>(a,2)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="41.1" y="239.85">
+			<title>(a,2)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(45 258.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">2</text>
+		<text style="font-size:13.65px;" transform="translate(45 258.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">2</text>
+	</g>
+	<g class="sim-bb-pin-group group-t3">
+		<rect x="60" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="57" y="180.75">
+			<title>(e,3)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="56.1" y="179.85">
+			<title>(e,3)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="57" y="195.75">
+			<title>(d,3)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="56.1" y="194.85">
+			<title>(d,3)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="57" y="210.75">
+			<title>(c,3)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="56.1" y="209.85">
+			<title>(c,3)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="57" y="225.75">
+			<title>(b,3)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="56.1" y="224.85">
+			<title>(b,3)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="57" y="240.75">
+			<title>(a,3)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="56.1" y="239.85">
+			<title>(a,3)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(60 258.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">3</text>
+		<text style="font-size:13.65px;" transform="translate(60 258.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">3</text>
+	</g>
+	<g class="sim-bb-pin-group group-t4">
+		<rect x="75" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="72" y="180.75">
+			<title>(e,4)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="71.1" y="179.85">
+			<title>(e,4)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="72" y="195.75">
+			<title>(d,4)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="71.1" y="194.85">
+			<title>(d,4)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="72" y="210.75">
+			<title>(c,4)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="71.1" y="209.85">
+			<title>(c,4)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="72" y="225.75">
+			<title>(b,4)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="71.1" y="224.85">
+			<title>(b,4)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="72" y="240.75">
+			<title>(a,4)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="71.1" y="239.85">
+			<title>(a,4)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(75 258.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">4</text>
+		<text style="font-size:13.65px;" transform="translate(75 258.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">4</text>
+	</g>
+	<g class="sim-bb-pin-group group-t5">
+		<rect x="90" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="87" y="180.75">
+			<title>(e,5)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="86.1" y="179.85">
+			<title>(e,5)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="87" y="195.75">
+			<title>(d,5)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="86.1" y="194.85">
+			<title>(d,5)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="87" y="210.75">
+			<title>(c,5)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="86.1" y="209.85">
+			<title>(c,5)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="87" y="225.75">
+			<title>(b,5)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="86.1" y="224.85">
+			<title>(b,5)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="87" y="240.75">
+			<title>(a,5)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="86.1" y="239.85">
+			<title>(a,5)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(90 258.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">5</text>
+		<text style="font-size:13.65px;" transform="translate(90 258.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">5</text>
+	</g>
+	<g class="sim-bb-pin-group group-t6">
+		<rect x="105" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="102" y="180.75">
+			<title>(e,6)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="101.1" y="179.85">
+			<title>(e,6)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="102" y="195.75">
+			<title>(d,6)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="101.1" y="194.85">
+			<title>(d,6)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="102" y="210.75">
+			<title>(c,6)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="101.1" y="209.85">
+			<title>(c,6)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="102" y="225.75">
+			<title>(b,6)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="101.1" y="224.85">
+			<title>(b,6)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="102" y="240.75">
+			<title>(a,6)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="101.1" y="239.85">
+			<title>(a,6)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(105 258.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">6</text>
+		<text style="font-size:13.65px;" transform="translate(105 258.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">6</text>
+	</g>
+	<g class="sim-bb-pin-group group-t7">
+		<rect x="120" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="117" y="180.75">
+			<title>(e,7)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="116.1" y="179.85">
+			<title>(e,7)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="117" y="195.75">
+			<title>(d,7)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="116.1" y="194.85">
+			<title>(d,7)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="117" y="210.75">
+			<title>(c,7)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="116.1" y="209.85">
+			<title>(c,7)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="117" y="225.75">
+			<title>(b,7)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="116.1" y="224.85">
+			<title>(b,7)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="117" y="240.75">
+			<title>(a,7)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="116.1" y="239.85">
+			<title>(a,7)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(120 258.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">7</text>
+		<text style="font-size:13.65px;" transform="translate(120 258.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">7</text>
+	</g>
+	<g class="sim-bb-pin-group group-t8">
+		<rect x="135" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="132" y="180.75">
+			<title>(e,8)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="131.1" y="179.85">
+			<title>(e,8)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="132" y="195.75">
+			<title>(d,8)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="131.1" y="194.85">
+		<title>(d,8)</title>
+			</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="132" y="210.75">
+			<title>(c,8)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="131.1" y="209.85">
+			<title>(c,8)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="132" y="225.75">
+			<title>(b,8)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="131.1" y="224.85">
+			<title>(b,8)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="132" y="240.75">
+			<title>(a,8)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="131.1" y="239.85">
+			<title>(a,8)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(135 258.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">8</text>
+		<text style="font-size:13.65px;" transform="translate(135 258.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">8</text>
+	</g>
+	<g class="sim-bb-pin-group group-t9">
+		<rect x="150" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="147" y="180.75">
+			<title>(e,9)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="146.1" y="179.85">
+			<title>(e,9)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="147" y="195.75">
+			<title>(d,9)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="146.1" y="194.85">
+			<title>(d,9)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="147" y="210.75">
+			<title>(c,9)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="146.1" y="209.85">
+			<title>(c,9)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="147" y="225.75">
+			<title>(b,9)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="146.1" y="224.85">
+			<title>(b,9)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="147" y="240.75">
+			<title>(a,9)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="146.1" y="239.85">
+			<title>(a,9)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(150 258.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">9</text>
+		<text style="font-size:13.65px;" transform="translate(150 258.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">9</text>
+	</g>
+	<g class="sim-bb-pin-group group-t10">
+		<rect x="165" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="162" y="180.75">
+			<title>(e,10)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="161.1" y="179.85">
+			<title>(e,10)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="162" y="195.75">
+			<title>(d,10)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="161.1" y="194.85">
+			<title>(d,10)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="162" y="210.75">
+			<title>(c,10)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="161.1" y="209.85">
+			<title>(c,10)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="162" y="225.75">
+			<title>(b,10)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="161.1" y="224.85">
+			<title>(b,10)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="162" y="240.75">
+			<title>(a,10)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="161.1" y="239.85">
+			<title>(a,10)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(165 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">10</text>
+		<text style="font-size:13.65px;" transform="translate(165 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">10</text>
+	</g>
+	<g class="sim-bb-pin-group group-t11">
+		<rect x="180" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="177" y="180.75">
+			<title>(e,11)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="176.1" y="179.85">
+			<title>(e,11)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="177" y="195.75">
+			<title>(d,11)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="176.1" y="194.85">
+			<title>(d,11)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="177" y="210.75">
+			<title>(c,11)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="176.1" y="209.85">
+			<title>(c,11)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="177" y="225.75">
+			<title>(b,11)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="176.1" y="224.85">
+			<title>(b,11)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="177" y="240.75">
+			<title>(a,11)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="176.1" y="239.85">
+			<title>(a,11)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(180 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">11</text>
+		<text style="font-size:13.65px;" transform="translate(180 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">11</text>
+	</g>
+	<g class="sim-bb-pin-group group-t12">
+		<rect x="195" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="192" y="180.75">
+			<title>(e,12)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="191.1" y="179.85">
+			<title>(e,12)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="192" y="195.75">
+			<title>(d,12)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="191.1" y="194.85">
+			<title>(d,12)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="192" y="210.75">
+			<title>(c,12)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="191.1" y="209.85">
+			<title>(c,12)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="192" y="225.75">
+			<title>(b,12)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="191.1" y="224.85">
+			<title>(b,12)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="192" y="240.75">
+			<title>(a,12)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="191.1" y="239.85">
+			<title>(a,12)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(195 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">12</text>
+		<text style="font-size:13.65px;" transform="translate(195 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">12</text>
+	</g>
+	<g class="sim-bb-pin-group group-t13">
+		<rect x="210" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="207" y="180.75">
+			<title>(e,13)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="206.1" y="179.85">
+			<title>(e,13)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="207" y="195.75">
+			<title>(d,13)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="206.1" y="194.85">
+			<title>(d,13)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="207" y="210.75">
+			<title>(c,13)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="206.1" y="209.85">
+			<title>(c,13)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="207" y="225.75">
+			<title>(b,13)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="206.1" y="224.85">
+			<title>(b,13)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="207" y="240.75">
+			<title>(a,13)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="206.1" y="239.85">
+			<title>(a,13)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(210 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">13</text>
+		<text style="font-size:13.65px;" transform="translate(210 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">13</text>
+	</g>
+	<g class="sim-bb-pin-group group-t14">
+		<rect x="225" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="222" y="180.75">
+			<title>(e,14)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="221.1" y="179.85">
+			<title>(e,14)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="222" y="195.75">
+			<title>(d,14)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="221.1" y="194.85">
+			<title>(d,14)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="222" y="210.75">
+			<title>(c,14)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="221.1" y="209.85">
+			<title>(c,14)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="222" y="225.75">
+			<title>(b,14)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="221.1" y="224.85">
+			<title>(b,14)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="222" y="240.75">
+			<title>(a,14)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="221.1" y="239.85">
+			<title>(a,14)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(225 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">14</text>
+		<text style="font-size:13.65px;" transform="translate(225 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">14</text>
+	</g>
+	<g class="sim-bb-pin-group group-t15">
+		<rect x="240" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="237" y="180.75">
+			<title>(e,15)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="236.1" y="179.85">
+			<title>(e,15)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="237" y="195.75">
+			<title>(d,15)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="236.1" y="194.85">
+			<title>(d,15)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="237" y="210.75">
+			<title>(c,15)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="236.1" y="209.85">
+			<title>(c,15)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="237" y="225.75">
+			<title>(b,15)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="236.1" y="224.85">
+			<title>(b,15)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="237" y="240.75">
+			<title>(a,15)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="236.1" y="239.85">
+			<title>(a,15)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(240 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">15</text>
+		<text style="font-size:13.65px;" transform="translate(240 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">15</text>
+	</g>
+	<g class="sim-bb-pin-group group-t16">
+		<rect x="255" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="252" y="180.75">
+			<title>(e,16)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="251.1" y="179.85">
+			<title>(e,16)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="252" y="195.75">
+			<title>(d,16)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="251.1" y="194.85">
+			<title>(d,16)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="252" y="210.75">
+			<title>(c,16)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="251.1" y="209.85">
+			<title>(c,16)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="252" y="225.75">
+			<title>(b,16)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="251.1" y="224.85">
+			<title>(b,16)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="252" y="240.75">
+			<title>(a,16)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="251.1" y="239.85">
+			<title>(a,16)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(255 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">16</text>
+		<text style="font-size:13.65px;" transform="translate(255 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">16</text>
+	</g>
+	<g class="sim-bb-pin-group group-t17">
+		<rect x="270" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="267" y="180.75">
+			<title>(e,17)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="266.1" y="179.85">
+			<title>(e,17)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="267" y="195.75">
+			<title>(d,17)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="266.1" y="194.85">
+			<title>(d,17)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="267" y="210.75">
+			<title>(c,17)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="266.1" y="209.85">
+			<title>(c,17)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="267" y="225.75">
+			<title>(b,17)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="266.1" y="224.85">
+			<title>(b,17)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="267" y="240.75">
+			<title>(a,17)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="266.1" y="239.85">
+			<title>(a,17)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(270 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">17</text>
+		<text style="font-size:13.65px;" transform="translate(270 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">17</text>
+	</g>
+	<g class="sim-bb-pin-group group-t18">
+		<rect x="285" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="282" y="180.75">
+			<title>(e,18)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="281.1" y="179.85">
+			<title>(e,18)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="282" y="195.75">
+			<title>(d,18)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="281.1" y="194.85">
+			<title>(d,18)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="282" y="210.75">
+			<title>(c,18)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="281.1" y="209.85">
+			<title>(c,18)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="282" y="225.75">
+			<title>(b,18)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="281.1" y="224.85">
+			<title>(b,18)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="282" y="240.75">
+			<title>(a,18)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="281.1" y="239.85">
+			<title>(a,18)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(285 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">18</text>
+		<text style="font-size:13.65px;" transform="translate(285 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">18</text>
+	</g>
+	<g class="sim-bb-pin-group group-t19">
+		<rect x="300" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="297" y="180.75">
+			<title>(e,19)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="296.1" y="179.85">
+			<title>(e,19)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="297" y="195.75">
+			<title>(d,19)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="296.1" y="194.85">
+			<title>(d,19)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="297" y="210.75">
+			<title>(c,19)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="296.1" y="209.85">
+			<title>(c,19)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="297" y="225.75">
+			<title>(b,19)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="296.1" y="224.85">
+			<title>(b,19)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="297" y="240.75">
+			<title>(a,19)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="296.1" y="239.85">
+			<title>(a,19)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(300 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">19</text>
+		<text style="font-size:13.65px;" transform="translate(300 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">19</text>
+	</g>
+	<g class="sim-bb-pin-group group-t20">
+		<rect x="315" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="312" y="180.75">
+			<title>(e,20)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="311.1" y="179.85">
+			<title>(e,20)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="312" y="195.75">
+			<title>(d,20)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="311.1" y="194.85">
+			<title>(d,20)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="312" y="210.75">
+			<title>(c,20)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="311.1" y="209.85">
+			<title>(c,20)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="312" y="225.75">
+			<title>(b,20)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="311.1" y="224.85">
+			<title>(b,20)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="312" y="240.75">
+			<title>(a,20)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="311.1" y="239.85">
+			<title>(a,20)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(315 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">20</text>
+		<text style="font-size:13.65px;" transform="translate(315 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">20</text>
+	</g>
+	<g class="sim-bb-pin-group group-t21">
+		<rect x="330" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="327" y="180.75">
+			<title>(e,21)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="326.1" y="179.85">
+			<title>(e,21)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="327" y="195.75">
+			<title>(d,21)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="326.1" y="194.85">
+			<title>(d,21)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="327" y="210.75">
+			<title>(c,21)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="326.1" y="209.85">
+			<title>(c,21)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="327" y="225.75">
+			<title>(b,21)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="326.1" y="224.85">
+			<title>(b,21)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="327" y="240.75">
+			<title>(a,21)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="326.1" y="239.85">
+			<title>(a,21)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(330 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">21</text>
+		<text style="font-size:13.65px;" transform="translate(330 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">21</text>
+	</g>
+	<g class="sim-bb-pin-group group-t22">
+		<rect x="345" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="342" y="180.75">
+			<title>(e,22)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="341.1" y="179.85">
+			<title>(e,22)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="342" y="195.75">
+			<title>(d,22)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="341.1" y="194.85">
+			<title>(d,22)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="342" y="210.75">
+			<title>(c,22)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="341.1" y="209.85">
+			<title>(c,22)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="342" y="225.75">
+			<title>(b,22)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="341.1" y="224.85">
+			<title>(b,22)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="342" y="240.75">
+			<title>(a,22)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="341.1" y="239.85">
+			<title>(a,22)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(345 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">22</text>
+		<text style="font-size:13.65px;" transform="translate(345 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">22</text>
+	</g>
+	<g class="sim-bb-pin-group group-t23">
+		<rect x="360" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="357" y="180.75">
+			<title>(e,23)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="356.1" y="179.85">
+			<title>(e,23)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="357" y="195.75">
+			<title>(d,23)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="356.1" y="194.85">
+			<title>(d,23)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="357" y="210.75">
+			<title>(c,23)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="356.1" y="209.85">
+			<title>(c,23)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="357" y="225.75">
+			<title>(b,23)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="356.1" y="224.85">
+			<title>(b,23)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="357" y="240.75">
+			<title>(a,23)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="356.1" y="239.85">
+			<title>(a,23)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(360 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">23</text>
+		<text style="font-size:13.65px;" transform="translate(360 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">23</text>
+	</g>
+	<g class="sim-bb-pin-group group-t24">
+		<rect x="375" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="372" y="180.75">
+			<title>(e,24)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="371.1" y="179.85">
+			<title>(e,24)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="372" y="195.75">
+			<title>(d,24)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="371.1" y="194.85">
+			<title>(d,24)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="372" y="210.75">
+			<title>(c,24)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="371.1" y="209.85">
+			<title>(c,24)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="372" y="225.75">
+			<title>(b,24)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="371.1" y="224.85">
+			<title>(b,24)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="372" y="240.75">
+			<title>(a,24)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="371.1" y="239.85">
+			<title>(a,24)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(375 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">24</text>
+		<text style="font-size:13.65px;" transform="translate(375 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">24</text>
+	</g>
+	<g class="sim-bb-pin-group group-t25">
+		<rect x="390" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="387" y="180.75">
+			<title>(e,25)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="386.1" y="179.85">
+			<title>(e,25)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="387" y="195.75">
+			<title>(d,25)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="386.1" y="194.85">
+			<title>(d,25)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="387" y="210.75">
+			<title>(c,25)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="386.1" y="209.85">
+			<title>(c,25)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="387" y="225.75">
+			<title>(b,25)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="386.1" y="224.85">
+			<title>(b,25)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="387" y="240.75">
+			<title>(a,25)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="386.1" y="239.85">
+			<title>(a,25)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(390 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">25</text>
+		<text style="font-size:13.65px;" transform="translate(390 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">25</text>
+	</g>
+	<g class="sim-bb-pin-group group-t26">
+		<rect x="405" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="402" y="180.75">
+			<title>(e,26)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="401.1" y="179.85">
+			<title>(e,26)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="402" y="195.75">
+			<title>(d,26)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="401.1" y="194.85">
+			<title>(d,26)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="402" y="210.75">
+			<title>(c,26)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="401.1" y="209.85">
+			<title>(c,26)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="402" y="225.75">
+			<title>(b,26)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="401.1" y="224.85">
+			<title>(b,26)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="402" y="240.75">
+			<title>(a,26)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="401.1" y="239.85">
+			<title>(a,26)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(405 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">26</text>
+		<text style="font-size:13.65px;" transform="translate(405 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">26</text>
+	</g>
+	<g class="sim-bb-pin-group group-t27">
+		<rect x="420" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="417" y="180.75">
+			<title>(e,27)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="416.1" y="179.85">
+			<title>(e,27)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="417" y="195.75">
+			<title>(d,27)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="416.1" y="194.85">
+			<title>(d,27)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="417" y="210.75">
+			<title>(c,27)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="416.1" y="209.85">
+			<title>(c,27)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="417" y="225.75">
+			<title>(b,27)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="416.1" y="224.85">
+			<title>(b,27)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="417" y="240.75">
+			<title>(a,27)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="416.1" y="239.85">
+			<title>(a,27)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(420 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">27</text>
+		<text style="font-size:13.65px;" transform="translate(420 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">27</text>
+	</g>
+	<g class="sim-bb-pin-group group-t28">
+		<rect x="435" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="432" y="180.75">
+			<title>(e,28)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="431.1" y="179.85">
+			<title>(e,28)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="432" y="195.75">
+			<title>(d,28)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="431.1" y="194.85">
+			<title>(d,28)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="432" y="210.75">
+			<title>(c,28)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="431.1" y="209.85">
+			<title>(c,28)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="432" y="225.75">
+			<title>(b,28)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="431.1" y="224.85">
+			<title>(b,28)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="432" y="240.75">
+			<title>(a,28)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="431.1" y="239.85">
+			<title>(a,28)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(435 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">28</text>
+		<text style="font-size:13.65px;" transform="translate(435 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">28</text>
+	</g>
+	<g class="sim-bb-pin-group group-t29">
+		<rect x="450" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="447" y="180.75">
+			<title>(e,29)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="446.1" y="179.85">
+			<title>(e,29)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="447" y="195.75">
+			<title>(d,29)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="446.1" y="194.85">
+			<title>(d,29)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="447" y="210.75">
+			<title>(c,29)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="446.1" y="209.85">
+			<title>(c,29)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="447" y="225.75">
+			<title>(b,29)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="446.1" y="224.85">
+			<title>(b,29)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="447" y="240.75">
+			<title>(a,29)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="446.1" y="239.85">
+			<title>(a,29)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(450 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">29</text>
+		<text style="font-size:13.65px;" transform="translate(450 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">29</text>
+	</g>
+	<g class="sim-bb-pin-group group-t30">
+		<rect x="465" y="183.75" width="0.0001" height="60" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="462" y="180.75">
+			<title>(e,30)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="461.1" y="179.85">
+			<title>(e,30)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="462" y="195.75">
+			<title>(d,30)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="461.1" y="194.85">
+			<title>(d,30)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="462" y="210.75">
+			<title>(c,30)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="461.1" y="209.85">
+			<title>(c,30)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="462" y="225.75">
+			<title>(b,30)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="461.1" y="224.85">
+			<title>(b,30)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="462" y="240.75">
+			<title>(a,30)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="461.1" y="239.85">
+			<title>(a,30)</title>
+		</rect>
+		<text style="font-size:10.5px;" transform="translate(465 258.75) rotate(-90) translate(-6.99993 3.15)" class="noselect sim-bb-label">30</text>
+		<text style="font-size:13.65px;" transform="translate(465 258.75) rotate(-90) translate(-9.099909 4.095)" class="noselect sim-bb-label-hover">30</text>
+	</g>
+	<g class="sim-bb-pin-group group--b">
+		<rect x="37.5" y="288.125" width="420" height="0.0001" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="34.5" y="285.125">
+			<title>(-,1)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="33.6" y="284.225">
+			<title>(-,1)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="49.5" y="285.125">
+			<title>(-,2)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="48.6" y="284.225">
+			<title>(-,2)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="64.5" y="285.125">
+			<title>(-,3)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="63.6" y="284.225">
+			<title>(-,3)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="79.5" y="285.125">
+			<title>(-,4)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="78.6" y="284.225">
+			<title>(-,4)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="94.5" y="285.125">
+			<title>(-,5)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="93.6" y="284.225">
+			<title>(-,5)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="124.5" y="285.125">
+			<title>(-,6)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="123.6" y="284.225">
+			<title>(-,6)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="139.5" y="285.125">
+			<title>(-,7)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="138.6" y="284.225">
+			<title>(-,7)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="154.5" y="285.125">
+			<title>(-,8)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="153.6" y="284.225">
+			<title>(-,8)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="169.5" y="285.125">
+			<title>(-,9)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="168.6" y="284.225">
+			<title>(-,9)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="184.5" y="285.125">
+			<title>(-,10)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="183.6" y="284.225">
+			<title>(-,10)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="214.5" y="285.125">
+			<title>(-,11)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="213.6" y="284.225">
+			<title>(-,11)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="229.5" y="285.125">
+			<title>(-,12)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="228.6" y="284.225">
+			<title>(-,12)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="244.5" y="285.125">
+			<title>(-,13)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="243.6" y="284.225">
+			<title>(-,13)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="259.5" y="285.125">
+			<title>(-,14)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="258.6" y="284.225">
+			<title>(-,14)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="274.5" y="285.125">
+			<title>(-,15)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="273.6" y="284.225">
+			<title>(-,15)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="304.5" y="285.125">
+			<title>(-,16)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="303.6" y="284.225">
+			<title>(-,16)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="319.5" y="285.125">
+			<title>(-,17)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="318.6" y="284.225">
+			<title>(-,17)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="334.5" y="285.125">
+			<title>(-,18)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="333.6" y="284.225">
+			<title>(-,18)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="349.5" y="285.125">
+			<title>(-,19)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="348.6" y="284.225">
+			<title>(-,19)</title>
+		</rect><rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="364.5" y="285.125">
+			<title>(-,20)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="363.6" y="284.225">
+			<title>(-,20)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="394.5" y="285.125">
+			<title>(-,21)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="393.6" y="284.225">
+			<title>(-,21)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="409.5" y="285.125">
+			<title>(-,22)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="408.6" y="284.225">
+			<title>(-,22)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="424.5" y="285.125">
+			<title>(-,23)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="423.6" y="284.225">
+			<title>(-,23)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="439.5" y="285.125">
+			<title>(-,24)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="438.6" y="284.225">
+			<title>(-,24)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="454.5" y="285.125">
+			<title>(-,25)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="453.6" y="284.225">
+			<title>(-,25)</title>
+		</rect>
+		<text style="font-size:30px;" transform="translate(13.05 280.75) rotate(-90) translate(-9.9999 9)" class="noselect sim-bb-label sim-bb-blue">-</text>
+		<text style="font-size:39px;" transform="translate(13.05 280.75) rotate(-90) translate(-12.999870000000001 11.7)" class="noselect sim-bb-label-hover sim-bb-blue">-</text>
+		<text style="font-size:30px;" transform="translate(484.05 280.75) rotate(-90) translate(-9.9999 9)" class="noselect sim-bb-label sim-bb-blue">-</text>
+		<text style="font-size:39px;" transform="translate(484.05 280.75) rotate(-90) translate(-12.999870000000001 11.7)" class="noselect sim-bb-label-hover sim-bb-blue">-</text>
+	</g>
+	<g class="sim-bb-pin-group group-+b">
+		<rect x="37.5" y="303.125" width="420" height="0.0001" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="34.5" y="300.125">
+			<title>(+,1)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="33.6" y="299.225">
+			<title>(+,1)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="49.5" y="300.125">
+			<title>(+,2)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="48.6" y="299.225">
+			<title>(+,2)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="64.5" y="300.125">
+			<title>(+,3)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="63.6" y="299.225">
+			<title>(+,3)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="79.5" y="300.125">
+			<title>(+,4)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="78.6" y="299.225">
+			<title>(+,4)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="94.5" y="300.125">
+			<title>(+,5)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="93.6" y="299.225">
+			<title>(+,5)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="124.5" y="300.125">
+			<title>(+,6)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="123.6" y="299.225">
+			<title>(+,6)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="139.5" y="300.125">
+			<title>(+,7)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="138.6" y="299.225">
+			<title>(+,7)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="154.5" y="300.125">
+			<title>(+,8)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="153.6" y="299.225">
+			<title>(+,8)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="169.5" y="300.125">
+			<title>(+,9)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="168.6" y="299.225">
+			<title>(+,9)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="184.5" y="300.125">
+			<title>(+,10)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="183.6" y="299.225">
+			<title>(+,10)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="214.5" y="300.125">
+			<title>(+,11)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="213.6" y="299.225">
+			<title>(+,11)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="229.5" y="300.125">
+			<title>(+,12)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="228.6" y="299.225">
+			<title>(+,12)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="244.5" y="300.125">
+			<title>(+,13)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="243.6" y="299.225">
+			<title>(+,13)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="259.5" y="300.125">
+			<title>(+,14)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="258.6" y="299.225">
+			<title>(+,14)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="274.5" y="300.125">
+			<title>(+,15)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="273.6" y="299.225">
+			<title>(+,15)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="304.5" y="300.125">
+			<title>(+,16)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="303.6" y="299.225">
+			<title>(+,16)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="319.5" y="300.125">
+			<title>(+,17)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="318.6" y="299.225">
+			<title>(+,17)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="334.5" y="300.125">
+			<title>(+,18)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="333.6" y="299.225">
+			<title>(+,18)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="349.5" y="300.125">
+			<title>(+,19)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="348.6" y="299.225">
+			<title>(+,19)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="364.5" y="300.125">
+			<title>(+,20)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="363.6" y="299.225">
+			<title>(+,20)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="394.5" y="300.125">
+			<title>(+,21)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="393.6" y="299.225">
+			<title>(+,21)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="409.5" y="300.125">
+			<title>(+,22)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="408.6" y="299.225">
+			<title>(+,22)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="424.5" y="300.125">
+			<title>(+,23)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="423.6" y="299.225">
+			<title>(+,23)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="439.5" y="300.125">
+			<title>(+,24)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="438.6" y="299.225">
+			<title>(+,24)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="454.5" y="300.125">
+			<title>(+,25)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="453.6" y="299.225">
+			<title>(+,25)</title>
+		</rect>
+		<text style="font-size:25.5px;" transform="translate(12 310.5) rotate(-90) translate(-8.499915 7.6499999999999995)" class="noselect sim-bb-label sim-bb-red">+</text>
+		<text style="font-size:33.15px;" transform="translate(12 310.5) rotate(-90) translate(-11.0498895 9.944999999999999)" class="noselect sim-bb-label-hover sim-bb-red">+</text>
+		<text style="font-size:25.5px;" transform="translate(483 310.5) rotate(-90) translate(-8.499915 7.6499999999999995)" class="noselect sim-bb-label sim-bb-red">+</text>
+		<text style="font-size:33.15px;" transform="translate(483 310.5) rotate(-90) translate(-11.0498895 9.944999999999999)" class="noselect sim-bb-label-hover sim-bb-red">+</text>
+	</g>
+	<g class="sim-bb-pin-group group--t">
+		<rect x="37.5" y="19.375000000000004" width="420" height="0.0001" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="34.5" y="16.375000000000004">
+			<title>(-,26)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="33.6" y="15.475000000000003">
+			<title>(-,26)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="49.5" y="16.375000000000004">
+			<title>(-,27)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="48.6" y="15.475000000000003">
+			<title>(-,27)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="64.5" y="16.375000000000004">
+			<title>(-,28)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="63.6" y="15.475000000000003">
+			<title>(-,28)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="79.5" y="16.375000000000004">
+			<title>(-,29)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="78.6" y="15.475000000000003">
+			<title>(-,29)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="94.5" y="16.375000000000004">
+			<title>(-,30)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="93.6" y="15.475000000000003">
+			<title>(-,30)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="124.5" y="16.375000000000004">
+			<title>(-,31)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="123.6" y="15.475000000000003">
+			<title>(-,31)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="139.5" y="16.375000000000004">
+			<title>(-,32)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="138.6" y="15.475000000000003">
+			<title>(-,32)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="154.5" y="16.375000000000004">
+			<title>(-,33)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="153.6" y="15.475000000000003">
+			<title>(-,33)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="169.5" y="16.375000000000004">
+			<title>(-,34)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="168.6" y="15.475000000000003">
+			<title>(-,34)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="184.5" y="16.375000000000004">
+			<title>(-,35)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="183.6" y="15.475000000000003">
+			<title>(-,35)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="214.5" y="16.375000000000004">
+			<title>(-,36)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="213.6" y="15.475000000000003">
+			<title>(-,36)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="229.5" y="16.375000000000004">
+			<title>(-,37)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="228.6" y="15.475000000000003">
+			<title>(-,37)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="244.5" y="16.375000000000004">
+			<title>(-,38)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="243.6" y="15.475000000000003">
+			<title>(-,38)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="259.5" y="16.375000000000004">
+			<title>(-,39)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="258.6" y="15.475000000000003">
+			<title>(-,39)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="274.5" y="16.375000000000004">
+			<title>(-,40)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="273.6" y="15.475000000000003">
+			<title>(-,40)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="304.5" y="16.375000000000004">
+			<title>(-,41)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="303.6" y="15.475000000000003">
+			<title>(-,41)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="319.5" y="16.375000000000004">
+			<title>(-,42)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="318.6" y="15.475000000000003">
+			<title>(-,42)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="334.5" y="16.375000000000004">
+			<title>(-,43)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="333.6" y="15.475000000000003">
+			<title>(-,43)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="349.5" y="16.375000000000004">
+			<title>(-,44)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="348.6" y="15.475000000000003">
+			<title>(-,44)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="364.5" y="16.375000000000004">
+			<title>(-,45)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="363.6" y="15.475000000000003">
+			<title>(-,45)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="394.5" y="16.375000000000004">
+			<title>(-,46)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="393.6" y="15.475000000000003">
+			<title>(-,46)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="409.5" y="16.375000000000004">
+			<title>(-,47)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="408.6" y="15.475000000000003">
+			<title>(-,47)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="424.5" y="16.375000000000004">
+			<title>(-,48)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="423.6" y="15.475000000000003">
+			<title>(-,48)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="439.5" y="16.375000000000004">
+			<title>(-,49)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="438.6" y="15.475000000000003">
+			<title>(-,49)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="454.5" y="16.375000000000004">
+			<title>(-,50)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="453.6" y="15.475000000000003">
+			<title>(-,50)</title></rect>
+		<text style="font-size:30px;" transform="translate(13.05 12) rotate(-90) translate(-9.9999 9)" class="noselect sim-bb-label sim-bb-blue">-</text>
+		<text style="font-size:39px;" transform="translate(13.05 12) rotate(-90) translate(-12.999870000000001 11.7)" class="noselect sim-bb-label-hover sim-bb-blue">-</text>
+		<text style="font-size:30px;" transform="translate(484.05 12) rotate(-90) translate(-9.9999 9)" class="noselect sim-bb-label sim-bb-blue">-</text>
+		<text style="font-size:39px;" transform="translate(484.05 12) rotate(-90) translate(-12.999870000000001 11.7)" class="noselect sim-bb-label-hover sim-bb-blue">-</text>
+	</g>
+	<g class="sim-bb-pin-group group-+t">
+		<rect x="37.5" y="34.375" width="420" height="0.0001" class="sim-bb-group-wire"></rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="34.5" y="31.375">
+			<title>(+,26)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="33.6" y="30.475">
+			<title>(+,26)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="49.5" y="31.375">
+			<title>(+,27)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="48.6" y="30.475">
+			<title>(+,27)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="64.5" y="31.375">
+			<title>(+,28)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="63.6" y="30.475">
+			<title>(+,28)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="79.5" y="31.375">
+			<title>(+,29)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="78.6" y="30.475">
+			<title>(+,29)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="94.5" y="31.375">
+			<title>(+,30)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="93.6" y="30.475">
+			<title>(+,30)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="124.5" y="31.375">
+			<title>(+,31)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="123.6" y="30.475">
+			<title>(+,31)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="139.5" y="31.375">
+			<title>(+,32)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="138.6" y="30.475">
+			<title>(+,32)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="154.5" y="31.375">
+			<title>(+,33)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="153.6" y="30.475">
+			<title>(+,33)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="169.5" y="31.375">
+			<title>(+,34)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="168.6" y="30.475">
+			<title>(+,34)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="184.5" y="31.375">
+			<title>(+,35)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="183.6" y="30.475">
+			<title>(+,35)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="214.5" y="31.375">
+			<title>(+,36)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="213.6" y="30.475">
+			<title>(+,36)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="229.5" y="31.375">
+			<title>(+,37)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="228.6" y="30.475">
+			<title>(+,37)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="244.5" y="31.375">
+			<title>(+,38)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="243.6" y="30.475">
+			<title>(+,38)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="259.5" y="31.375">
+			<title>(+,39)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="258.6" y="30.475">
+			<title>(+,39)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="274.5" y="31.375">
+			<title>(+,40)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="273.6" y="30.475">
+			<title>(+,40)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="304.5" y="31.375">
+			<title>(+,41)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="303.6" y="30.475">
+			<title>(+,41)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="319.5" y="31.375">
+			<title>(+,42)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="318.6" y="30.475">
+			<title>(+,42)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="334.5" y="31.375">
+			<title>(+,43)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="333.6" y="30.475">
+			<title>(+,43)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="349.5" y="31.375">
+			<title>(+,44)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="348.6" y="30.475">
+			<title>(+,44)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="364.5" y="31.375">
+			<title>(+,45)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="363.6" y="30.475">
+			<title>(+,45)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="394.5" y="31.375">
+			<title>(+,46)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="393.6" y="30.475">
+			<title>(+,46)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="409.5" y="31.375">
+			<title>(+,47)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="408.6" y="30.475">
+			<title>(+,47)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="424.5" y="31.375">
+			<title>(+,48)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="423.6" y="30.475">
+			<title>(+,48)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="439.5" y="31.375">
+			<title>(+,49)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="438.6" y="30.475">
+			<title>(+,49)</title>
+		</rect>
+		<rect class="sim-bb-pin" rx="2" ry="2" width="6" height="6" x="454.5" y="31.375">
+			<title>(+,50)</title>
+		</rect>
+		<rect class="sim-bb-pin-hover" rx="2" ry="2" width="7.800000000000001" height="7.800000000000001" x="453.6" y="30.475">
+			<title>(+,50)</title>
+		</rect>
+		<text style="font-size:25.5px;" transform="translate(12 41.75000000000001) rotate(-90) translate(-8.499915 7.6499999999999995)" class="noselect sim-bb-label sim-bb-red">+</text>
+		<text style="font-size:33.15px;" transform="translate(12 41.75000000000001) rotate(-90) translate(-11.0498895 9.944999999999999)" class="noselect sim-bb-label-hover sim-bb-red">+</text>
+		<text style="font-size:25.5px;" transform="translate(483 41.75000000000001) rotate(-90) translate(-8.499915 7.6499999999999995)" class="noselect sim-bb-label sim-bb-red">+</text>
+		<text style="font-size:33.15px;" transform="translate(483 41.75000000000001) rotate(-90) translate(-11.0498895 9.944999999999999)" class="noselect sim-bb-label-hover sim-bb-red">+</text>
+	</g>
+	<g class="sim-bb-group-misc">
+		<text style="font-size:10.5px;" transform="translate(15 78.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">j</text>
+		<text style="font-size:13.65px;" transform="translate(15 78.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">j</text>
+		<text style="font-size:10.5px;" transform="translate(480 78.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">j</text>
+		<text style="font-size:13.65px;" transform="translate(480 78.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">j</text>
+		<text style="font-size:10.5px;" transform="translate(15 93.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">i</text>
+		<text style="font-size:13.65px;" transform="translate(15 93.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">i</text>
+		<text style="font-size:10.5px;" transform="translate(480 93.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">i</text>
+		<text style="font-size:13.65px;" transform="translate(480 93.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">i</text>
+		<text style="font-size:10.5px;" transform="translate(15 108.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">h</text>
+		<text style="font-size:13.65px;" transform="translate(15 108.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">h</text>
+		<text style="font-size:10.5px;" transform="translate(480 108.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">h</text>
+		<text style="font-size:13.65px;" transform="translate(480 108.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">h</text>
+		<text style="font-size:10.5px;" transform="translate(15 123.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">g</text>
+		<text style="font-size:13.65px;" transform="translate(15 123.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">g</text>
+		<text style="font-size:10.5px;" transform="translate(480 123.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">g</text>
+		<text style="font-size:13.65px;" transform="translate(480 123.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">g</text>
+		<text style="font-size:10.5px;" transform="translate(15 138.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">f</text>
+		<text style="font-size:13.65px;" transform="translate(15 138.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">f</text>
+		<text style="font-size:10.5px;" transform="translate(480 138.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">f</text>
+		<text style="font-size:13.65px;" transform="translate(480 138.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">f</text>
+		<text style="font-size:10.5px;" transform="translate(15 183.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">e</text>
+		<text style="font-size:13.65px;" transform="translate(15 183.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">e</text>
+		<text style="font-size:10.5px;" transform="translate(480 183.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">e</text>
+		<text style="font-size:13.65px;" transform="translate(480 183.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">e</text>
+		<text style="font-size:10.5px;" transform="translate(15 198.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">d</text>
+		<text style="font-size:13.65px;" transform="translate(15 198.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">d</text>
+		<text style="font-size:10.5px;" transform="translate(480 198.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">d</text>
+		<text style="font-size:13.65px;" transform="translate(480 198.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">d</text>
+		<text style="font-size:10.5px;" transform="translate(15 213.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">c</text>
+		<text style="font-size:13.65px;" transform="translate(15 213.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">c</text>
+		<text style="font-size:10.5px;" transform="translate(480 213.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">c</text>
+		<text style="font-size:13.65px;" transform="translate(480 213.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">c</text>
+		<text style="font-size:10.5px;" transform="translate(15 228.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">b</text>
+		<text style="font-size:13.65px;" transform="translate(15 228.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">b</text>
+		<text style="font-size:10.5px;" transform="translate(480 228.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">b</text>
+		<text style="font-size:13.65px;" transform="translate(480 228.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">b</text>
+		<text style="font-size:10.5px;" transform="translate(15 243.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">a</text>
+		<text style="font-size:13.65px;" transform="translate(15 243.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">a</text>
+		<text style="font-size:10.5px;" transform="translate(480 243.75) rotate(-90) translate(-3.499965 3.15)" class="noselect sim-bb-label">a</text>
+		<text style="font-size:13.65px;" transform="translate(480 243.75) rotate(-90) translate(-4.5499545 4.095)" class="noselect sim-bb-label-hover">a</text>
+	</g>
+</svg >
